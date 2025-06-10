@@ -1,9 +1,10 @@
 # Delhi Air Quality Index (AQI) Prediction
 
-A machine learning-based project to predict Delhi's Air Quality Index (AQI) using historical data and various atmospheric features. The project involves feature engineering, model training, and deployment using modern web technologies and containerization.
+A machine learning-based project to predict Delhi's Air Quality Index (AQI) using historical data and various atmospheric features. The project involves feature engineering, model training and deployment using modern web technologies and containerization.
 
 ## Table of Contents
 - [Overview](#overview)
+- [Live Demo](#live-demo)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [AQI Formula](#aqi-formula)
@@ -14,7 +15,11 @@ A machine learning-based project to predict Delhi's Air Quality Index (AQI) usin
 - [How to Contribute](#how-to-contribute)
 
 ## Overview
-This project aims to predict Delhi's AQI using machine learning models. The **Random Forest Regressor** model delivered the best performance with an R<sup>2</sup> score of **0.996** and RMSE of **7.62**. The dataset, which includes atmospheric pollutant data, is processed to calculate the AQI using a predefined formula. The project includes a backend built with **Flask, a user-friendly frontend developed with **HTML**, **CSS**, and **JavaScript**, and is containerized with **Docker** for seamless deployment.
+This project aims to predict Delhi's AQI using machine learning models. The **Random Forest Regressor** model delivered the best performance with an R<sup>2</sup> score of **0.996** and RMSE of **7.62**. The dataset, which includes atmospheric pollutant data, is processed to calculate the AQI using a predefined formula. The project includes a backend built with **Flask**, a user-friendly frontend developed with **HTML**, **CSS**, and **JavaScript**, and is containerized with **Docker** for seamless deployment on **AWS EC2**.
+
+## Live Demo
+Try the live application: http://65.2.131.26<br>
+The application is deployed on AWS EC2 and accessible via the public IP address.
 
 ## Features
 - Trained multiple machine learning models to predict AQI with high accuracy.
@@ -22,11 +27,12 @@ This project aims to predict Delhi's AQI using machine learning models. The **Ra
 - Developed a REST API using Flask for processing user inputs and generating predictions.
 - Built a responsive frontend for user interaction.
 - Containerized the application using Docker and deployed it on Docker Hub.
+- Production deployment on AWS EC2 with public access.
 
 ## Tech Stack
 - **Languages**: Python, HTML, CSS, JavaScript
 - **Libraries**: scikit-learn, Flask, Pandas, NumPy, Matplotlib, Seaborn
-- **Tools**: Docker, Docker Hub
+- **Tools**: Docker, Docker Hub, AWS EC2
 
 ## AQI Formula
 
@@ -87,7 +93,7 @@ project-directory/
 - Python 3.10 or later
 - Docker
 
-### Steps
+### Setup Instructions
 **Option 1:** Pull the Pre-Built Docker Image
 1. Pull the Docker image from Docker Hub:
 ```bash
